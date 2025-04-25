@@ -1,0 +1,35 @@
+App      :parama_satya
+Version  :1.0.0
+Tech     :modular HTML
+Created  :mochmona.developer
+style    :DRY,SOLID,KISS,Reusable pure component
+
+
+# ERD,Hirarcy
+index.html,style.css,main.js type="module".
+
+index.html (<div id='root')
+style.css  (as global style)
+main.js    (as Module and core script)
+
+appLayout.js    # as main layout
+          |
+          |<header>
+          |<main>       #container for components
+          |<footer>
+
+components/     # as directory for layout and logic component
+          |Navigation/Nav.js
+          |Sections/section_1.js...etc
+          |404.js
+
+pages/    |page-1
+          |page-2
+          |page-3
+utils/          # reusable code and share functionality script
+data/api        # optional , dummy data and different API 
+
+
+!Note : handle async carefully,fecth API ,async Components(callstack,callback que,browser API)
+!remember JS : FILO(first in last out) or Last in First Out
+
