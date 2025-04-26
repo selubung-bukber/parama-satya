@@ -1,0 +1,129 @@
+/* =======================
+   1. RESET & NORMALIZE
+   ======================= */
+
+   *,
+   *::before,
+   *::after {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+   }
+   
+   html, body {
+     height: 100%;
+     line-height: 1.5;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+   }
+   
+   img, picture, video, canvas, svg {
+     display: block;
+     max-width: 100%;
+     height: auto;
+   }
+   
+   input, button, textarea, select {
+     font: inherit;
+     background: none;
+     border: none;
+     outline: none;
+   }
+   
+   button {
+     cursor: pointer;
+   }
+   
+   a {
+     text-decoration: none;
+     color: inherit;
+   }
+   
+   ul, ol {
+     list-style: none;
+   }
+   
+   /* ================
+      2. ROOT VARIABLES
+      ================ */
+   :root {
+     /* COLOR PALETTE */
+     --color-primary: #0057b7;
+     --color-secondary: #ffcc00;
+     --color-accent: #e63946;
+     --color-bg: #f9f9f9;
+     --color-text: #333;
+     --color-muted: #777;
+     --color-white: #fff;
+     --color-black: #000;
+   
+     /* TYPOGRAPHY */
+     --font-base: 16px;
+     --font-sm: 0.875rem;
+     --font-md: 1rem;
+     --font-lg: 1.25rem;
+     --font-xl: 2rem;
+     --font-xxl: 3rem;
+   
+     /* SPACING */
+     --space-xs: 0.25rem;
+     --space-sm: 0.5rem;
+     --space-md: 1rem;
+     --space-lg: 2rem;
+     --space-xl: 4rem;
+   
+     /* BORDER RADIUS */
+     --radius-sm: 4px;
+     --radius-md: 8px;
+     --radius-lg: 16px;
+   }
+   
+   /* =======================
+      3. UTILITY CLASSES
+      ======================= */
+   
+   /* Display */
+   .d-block { display: block; }
+   .d-inline { display: inline; }
+   .d-inline-block { display: inline-block; }
+   .d-flex { display: flex; }
+   .d-grid { display: grid; }
+   
+   /* Flex */
+   .justify-center { justify-content: center; }
+   .align-center { align-items: center; }
+   .flex-col { flex-direction: column; }
+   
+   /* Text */
+   .text-center { text-align: center; }
+   .text-right { text-align: right; }
+   .text-left { text-align: left; }
+   
+   .text-sm { font-size: var(--font-sm); }
+   .text-md { font-size: var(--font-md); }
+   .text-lg { font-size: var(--font-lg); }
+   .text-xl { font-size: var(--font-xl); }
+   
+   /* Margin / Padding */
+   .m-0 { margin: 0; }
+   .mt-1 { margin-top: var(--space-sm); }
+   .mb-1 { margin-bottom: var(--space-sm); }
+   .p-1 { padding: var(--space-sm); }
+   .p-2 { padding: var(--space-md); }
+   .px-2 { padding-left: var(--space-md); padding-right: var(--space-md); }
+   .py-2 { padding-top: var(--space-md); padding-bottom: var(--space-md); }
+   
+   /* Colors */
+   .bg-primary { background-color: var(--color-primary); color: var(--color-white); }
+   .bg-secondary { background-color: var(--color-secondary); }
+   .bg-muted { background-color: var(--color-muted); }
+   .text-primary { color: var(--color-primary); }
+   .text-muted { color: var(--color-muted); }
+   
+   /* Radius */
+   .rounded-sm { border-radius: var(--radius-sm); }
+   .rounded-md { border-radius: var(--radius-md); }
+   .rounded-lg { border-radius: var(--radius-lg); }
+   
+   

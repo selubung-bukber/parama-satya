@@ -33,3 +33,25 @@ data/api        # optional , dummy data and different API
 !Note : handle async carefully,fecth API ,async Components(callstack,callback que,browser API)
 !remember JS : FILO(first in last out) or Last in First Out
 
+
+
+yaml
+START
+ |
+ v
+index.html -> ketemu <div id="root"></div> (masih kosong)
+ |
+ v
+main.js
+ | 
+ v
+initApp(root) -> MASUKKAN semua HTML ke #root
+ |
+ v
+HTML SUDAH ADA di browser
+ |
+ v
+Pasang semua Event Listener (Swiper, WOW, tombol klik, dll)
+ |
+ v
+Selesai. Web jadi interaktif.
